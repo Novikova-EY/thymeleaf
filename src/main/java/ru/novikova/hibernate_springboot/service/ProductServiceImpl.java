@@ -30,10 +30,10 @@ public class ProductServiceImpl implements ProductService {
                                     Integer size, String sort) {
         Specification<Product> spec = Specification.where(null);
         if (nameFilter.isPresent() && !nameFilter.get().isBlank()) {
-            spec.and(ProductSpecification.nameLike(nameFilter.get()));
+            spec = spec.and(ProductSpecification.nameLike(nameFilter.get()));
         }
-        return productRepository.findAll(spec, PageRequest.of(page, size, Sort.by(sort)))
-                .map(ProductServiceImpl::convertToDto);
+            return productRepository.findAll(spec, PageRequest.of(page, size, Sort.by(sort)))
+                    .map(ProductServiceImpl::convertToDto);
     }
 
     @Override
