@@ -1,0 +1,11 @@
+ru\novikova\hibernate_springboot\controller\ProductController.class
+ru\novikova\hibernate_springboot\service\ProductService.class
+ru\novikova\hibernate_springboot\HibernateSpringbootApplication.class
+ru\novikova\hibernate_springboot\persist\Category.class
+ru\novikova\hibernate_springboot\service\dto\ProductDto.class
+ru\novikova\hibernate_springboot\controller\NotFoundException.class
+ru\novikova\hibernate_springboot\persist\ProductRepository.class
+ru\novikova\hibernate_springboot\service\ProductServiceImpl.class
+ru\novikova\hibernate_springboot\persist\ProductSpecification.class
+ru\novikova\hibernate_springboot\persist\Product.class
+ru\novikova\hibernate_springboot\persist\CategoryRepository.class
