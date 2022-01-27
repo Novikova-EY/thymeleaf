@@ -3,23 +3,17 @@ package ru.novikova.hibernate_springboot.controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.domain.Specification;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import ru.novikova.hibernate_springboot.persist.CategoryRepository;
-import ru.novikova.hibernate_springboot.persist.Product;
-import ru.novikova.hibernate_springboot.persist.ProductRepository;
-import ru.novikova.hibernate_springboot.persist.ProductSpecification;
+import ru.novikova.hibernate_springboot.exceptions.NotFoundException;
+import ru.novikova.hibernate_springboot.repository.CategoryRepository;
 import ru.novikova.hibernate_springboot.service.ProductService;
 import ru.novikova.hibernate_springboot.service.dto.ProductDto;
 
-import javax.persistence.criteria.Predicate;
 import javax.validation.Valid;
-import java.math.BigDecimal;
-import java.util.List;
 import java.util.Optional;
 
 @Controller

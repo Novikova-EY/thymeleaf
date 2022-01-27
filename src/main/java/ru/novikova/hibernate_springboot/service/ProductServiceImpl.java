@@ -7,6 +7,8 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import ru.novikova.hibernate_springboot.persist.*;
+import ru.novikova.hibernate_springboot.repository.CategoryRepository;
+import ru.novikova.hibernate_springboot.repository.ProductRepository;
 import ru.novikova.hibernate_springboot.service.dto.ProductDto;
 
 import java.util.Optional;
